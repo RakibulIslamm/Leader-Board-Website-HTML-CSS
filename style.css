@@ -1,0 +1,351 @@
+/*
+===========================================
+                    Fonts
+===========================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+===========================================
+            Common CSS Style
+===========================================
+*/
+body{
+    background: #E5E5E5;
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.content
+{
+    width: 865px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.sec-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #562EFF;
+}
+
+hr
+{
+    border: .5px solid #D1D1D1;
+}
+
+
+/*
+===========================================
+            Header Section Style
+===========================================
+*/
+
+header
+{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #562EFF;
+    margin-bottom: 60px;
+}
+
+.header-container
+{
+    width: 865px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo a
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-logo img
+{
+    width: 41px;
+}
+
+.header-logo h2
+{
+    font-size: 24px;
+    padding-left: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header-nav
+{
+    display: flex;
+    align-items: center;
+}
+
+.header-nav nav ul
+{
+    display: flex;
+}
+
+.header-nav nav ul li
+{
+    list-style: none;
+    margin-right: 36px;
+}
+
+.header-nav nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.user-image
+{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.user-image img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*
+===========================================
+            Top players Style
+===========================================
+*/
+
+.top-players
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin: 45px 0;
+}
+
+.player
+{
+    display: flex;
+    align-items: center;
+}
+
+.player img
+{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.player h3
+{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    padding-left: 16px;
+}
+
+/*
+===========================================
+            Blogs Style
+===========================================
+*/
+
+.blog-sec-title
+{
+    margin-top: 30px;
+}
+
+.blogs
+{
+    margin: 45px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.blog
+{
+    display: flex;
+    align-items: center;
+    width: 360px;
+}
+
+.blog .thumb img
+{
+    width: 177px;
+    height: 117px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.blog-info
+{
+    position: relative;
+    left: 15px;
+}
+
+.blog-info h3
+{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.blog-info p{
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blog-info a{
+    color: #562EFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/*
+===========================================
+            Courses Style
+===========================================
+*/
+
+.courses
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course {
+    margin-top: 45px;
+    width: 252px;
+    padding: 13px;
+    box-shadow: 1px 1px 15px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+}
+
+.course .course-thumb img {
+    width: 225px;
+    height: 105px;
+}
+
+.course-info h3
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.course-info p
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ED6B4F;
+    line-height: 2.5;
+}
+
+.ratings-and-duration
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ratings ion-icon
+{
+    font-size: 14px;
+    color: #FFC014;
+}
+
+.ratings ion-icon.blank
+{
+    color: gray;
+    opacity: 0.6;
+}
+
+.ratings span
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: #A2A2A2;
+}
+
+.duration
+{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    background: #FFE4E8;
+    border-radius: 20px;
+    padding: 3px 7px;
+    color: #FF4A60;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.duration ion-icon
+{
+    font-size: 20px;
+    color: #FF4A60;
+    --ionicon-stroke-width: 50px;
+}
+
+/*
+===========================================
+            Footer Style
+===========================================
+*/
+
+footer
+{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+footer p
+{
+    font-size: 16px;
+    color: gray;
+}
+
+footer p a
+{
+    text-decoration: none;
+    color: lightblue;
+}
+
+
