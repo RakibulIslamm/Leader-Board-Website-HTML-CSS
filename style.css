@@ -253,6 +253,7 @@ header
     padding: 13px;
     box-shadow: 1px 1px 15px rgb(0 0 0 / 8%);
     border-radius: 10px;
+    justify-self: center;
 }
 
 .course .course-thumb img {
