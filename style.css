@@ -350,3 +350,102 @@ footer p a
 }
 
 
+/*
+===========================================
+            Media for mobile
+===========================================
+*/
+
+@media only screen and (max-width: 600px){
+    .header-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header-nav nav {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+    .sec-title {
+        text-align: center;
+    }
+    .top-players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        flex-direction: column;
+    }
+    .player img {
+        width: 100px;
+        height: 100px;
+    }
+    .player h3 {
+        padding-left: 0;
+        padding-top: 16px;
+        font-size: 27px;
+        font-weight: 700;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        width: 100%;
+    }
+    .blog .thumb img {
+        width: 120px;
+        height: auto;
+    }
+    .blog-info h3 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .blog-info p {
+        display: none;
+    }
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course {
+        width: 100%;
+    }
+    .course .course-thumb img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*
+===========================================
+    Media for tablets and small screen
+===========================================
+*/
+
+@media only screen and (min-width: 601px) and (max-width: 850px){
+    .header-container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .content {
+        width: 100%;
+    }
+    .top-players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        width: 100%;
+    }
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course {
+        width: 100%;
+    }
+    .course .course-thumb img {
+        width: 100%;
+        height: auto;
+    }
+}
