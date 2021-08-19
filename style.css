@@ -17,6 +17,36 @@
             Common CSS Style
 ===========================================
 */
+/* .user-image{
+    position: relative;
+}
+.user-image ul{
+    position: absolute;
+    top: 75px;
+    background: #562EFF;
+    width: 150px;
+    height: auto;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in;
+}
+.user-image ul li{
+    list-style: none;
+    color: #fff;
+    padding: 20px;
+}
+.user-image ul li:hover{
+    background: #fff;
+    color: #000;
+}
+.user-image:hover ul{
+    visibility: visible;
+    opacity: 1;
+} */
+
+
+
 body{
     background: #E5E5E5;
 }
@@ -126,7 +156,6 @@ header
     width: 51px;
     height: 51px;
     border-radius: 50%;
-    cursor: pointer;
 }
 
 .user-image img{
@@ -135,6 +164,7 @@ header
     border: 2px solid rgba(255, 255, 255, .6);
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 /*
@@ -331,7 +361,7 @@ header
 footer
 {
     width: 100%;
-    height: 95px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
